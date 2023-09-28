@@ -1,0 +1,12 @@
+{
+  "name": "MyPortfolio",
+  "version": "1.0.0",
+  "description": "To Show Whoever Cares To Know",
+  "main": "index.js",
+  "repository": "https://github.com/NurlybekSultamuratov/Portfolio.git",
+  "author": "Nurlybek",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.7.1"
+  }
+}
