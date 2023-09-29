@@ -1,12 +1,16 @@
 {
-  "name": "MyPortfolio",
-  "version": "1.0.0",
-  "description": "To Show Whoever Cares To Know",
-  "main": "index.js",
-  "repository": "https://github.com/NurlybekSultamuratov/Portfolio.git",
-  "author": "Nurlybek",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.7.1"
+  "name": "myportfolio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }
