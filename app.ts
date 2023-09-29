@@ -4,8 +4,7 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
-let indexRouter = require('./routes/index');
-let usersRouter = require('./routes/users');
+import indexRouter from './routes/index'; //changed from let to import from
 
 const app = express(); //never changes so it is const
 export default app;
@@ -20,7 +19,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -38,4 +36,3 @@ app.use(function(err:createError.HttpError, req:express.Request, res:express.Res
   res.render('error');
 });
 
-//module.exports = app;
